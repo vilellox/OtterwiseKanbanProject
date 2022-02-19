@@ -1,0 +1,44 @@
+.Task {
+  width: 280px;
+  height: 81px;
+  padding: 10px;
+  margin: 0 0 10px 10px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 2px 2px 2px #4891a8;
+}
+
+.Task h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #171717;
+}
+
+.Task button {
+  width: 32px;
+  height: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: -0.02em;
+  background-color: #59b4d1;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 0 0;
+}
+
+.info button {
+  margin-left: 10px;
+}

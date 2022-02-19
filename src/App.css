@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e1e8ed;
+}
+
+h1 {
+  padding: 41px 60px;
+}
+
+.App__tasks {
+  display: flex;
+}
