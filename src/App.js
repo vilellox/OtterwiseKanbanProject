@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Card from "./Component/Card";
+import icon from "./assets/img/todo.svg";
+import img from "./assets/img/Female.png";
+
+import "./App.css";
 
 function App() {
+  const tasks = [
+    { name: "Christmas Banners", img: img, label: "Label" },
+    { name: "Redo Portfolio", img: img, label: "Label" },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Kanban</h1>
+      <Card title={"To do"} icon={icon} tasks={tasks} />
     </div>
   );
 }
