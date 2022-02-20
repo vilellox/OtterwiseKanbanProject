@@ -1,14 +1,33 @@
 .Card {
   background: #59b4d1;
-  height: 221px;
-  width: 300px;
-  border-radius: 0px 0px 4px 4px;
-  margin: 41px 60px;
+  border-radius: 4px 4px 4px 4px;
+  border-top: 5px solid #50a2bc;
+  padding: 10px;
+}
+
+.Card.todo {
+  background: #59b4d1;
+  border-top: 5px solid #50a2bc;
+}
+
+.Card.progress {
+  background: #d0935a;
+  border-top: 5px solid #bb8451;
+}
+
+.Card.review {
+  background: #945ad1;
+  border-top: 5px solid #8551bc;
+}
+
+.Card.done {
+  background: #59d090;
+  border-top: 5px solid #50bb82;
 }
 
 .card__title {
   display: flex;
-  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .title {

@@ -1,19 +1,24 @@
-import react from "react";
 import Task from "../Task";
-import img from "../../assets/img/Female.png";
 
 import "./Card.css";
 
-const Card = ({ icon, title, tasks }) => {
+const Card = ({ icon, title, tasks, variant }) => {
   return (
-    <div className="Card">
+    <div className={`Card ${variant}`}>
       <div className="card__title">
         <img src={icon}></img>
         <h3 className="title">{title}</h3>
       </div>
       {tasks.map((task) => {
         console.log(task);
-        return <Task name={task.name} label={task.label} img={task.img} />;
+        return (
+          <Task
+            variant={variant}
+            name={task.name}
+            label={task.label}
+            img={task.img}
+          />
+        );
       })}
     </div>
   );

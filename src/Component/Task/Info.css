@@ -2,10 +2,12 @@
   width: 280px;
   height: 81px;
   padding: 10px;
-  margin: 0 0 10px 10px;
   border-radius: 4px;
   background-color: white;
   box-shadow: 2px 2px 2px #4891a8;
+}
+.Task:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .Task h3 {
@@ -19,8 +21,6 @@
 }
 
 .Task button {
-  width: 32px;
-  height: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -31,12 +31,37 @@
   color: #ffffff;
   border: none;
   border-radius: 2px;
+  padding: 5px 4px;
+}
+
+.Task.progress button {
+  background-color: #d0935a;
+}
+
+.Task.progress {
+  box-shadow: 2px 2px 2px #ab794a;
+}
+
+.Task.review {
+}
+
+.Task.done {
 }
 
 .info {
   display: flex;
+  overflow: hidden;
   align-items: center;
   padding: 10px 0 0 0;
+}
+
+.info img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+
+  object-fit: cover;
 }
 
 .info button {
