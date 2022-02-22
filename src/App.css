@@ -34,3 +34,7 @@ h1 {
   align-items: flex-start;
   gap: 35px;
 }
+
+.card title {
+  color: black;
+}

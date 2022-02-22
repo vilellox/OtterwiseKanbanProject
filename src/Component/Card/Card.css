@@ -25,6 +25,10 @@
   border-top: 5px solid #50bb82;
 }
 
+.Card.done h3 {
+  color: black;
+}
+
 .card__title {
   display: flex;
   margin-bottom: 10px;

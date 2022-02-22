@@ -2,6 +2,8 @@ import React from "react";
 import Card from "./Component/Card";
 import icon from "./assets/img/todo.svg";
 import icon1 from "./assets/img/icon01.svg";
+import icon2 from "./assets/img/pen.svg"
+import icon3 from "./assets/img/Done.png"
 import img from "./assets/img/Female.png";
 import img01 from "./assets/img/Female01.png";
 import background from "./assets/img/background.svg";
@@ -15,17 +17,17 @@ function App() {
   ];
   const tasks01 = [
     { name: "Coffee Break", img: img01, label: "Always" },
-    { name: "Updating Portfolio", img: img01, label: "Always" },
+    { name: "Updating Portfolio", img: img01, label: "Webflow" },
   ];
   const tasks02 = [
-    { name: "Coffee Break", img: img01, label: "Always" },
-    { name: "Coffee Break", img: img01, label: "Always" },
-    { name: "Updating Portfolio", img: img01, label: "Always" },
+    { name: "Release ta Figma Community", img: img01, label: "Release" },
+    { name: "User Feedback", img: img01, label: "Feedback" },
+    { name: "Background images from humaaans.com", img: img01, label: "Sourcing" },
   ];
   const tasks03 = [
-    { name: "Coffee Break", img: img01, label: "Always" },
-    { name: "Coffee Break", img: img01, label: "Always" },
-    { name: "Updating Portfolio", img: img01, label: "Always" },
+    { name: "Style Guide", img: img01, label: "UI" },
+    { name: "Component Library", img: img01, label: "UI" },
+    { name: "Stickers Components", img: img01, label: "UI" },
   ];
   return (
     <div className="App">
@@ -45,17 +47,19 @@ function App() {
         <div>
           <Card
             variant="review"
-            title={"In Progress"}
-            icon={icon1}
+            title={"Review"}
+            icon={icon2}
             tasks={tasks02}
+            color="purple"
           />
         </div>
         <div>
           <Card
             variant="done"
-            title={"In Progress"}
-            icon={icon1}
+            title={"Done"}
+            icon={icon3}
             tasks={tasks03}
+            color="Green"
           />
         </div>
       </div>

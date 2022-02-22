@@ -42,10 +42,14 @@
   box-shadow: 2px 2px 2px #ab794a;
 }
 
-.Task.review {
+.Task.review button {
+  background-color: #945AD1;
+  
 }
 
-.Task.done {
+.Task.done button {
+  background-color: #59D090;
+  color: black;
 }
 
 .info {
